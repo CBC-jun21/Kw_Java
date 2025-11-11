@@ -3,5 +3,7 @@ public String fetchUrl(String url) throws IOException {
     HttpURLConnection conn = (HttpURLConnection) u.openConnection();
     try (InputStream in = conn.getInputStream()) {
         return new String(in.readAllBytes(), StandardCharsets.UTF_8);
+            HttpURLConnection conn = (HttpURLConnection) u.openConnection();
     }
 }
+
