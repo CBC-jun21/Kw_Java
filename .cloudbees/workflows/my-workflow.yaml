@@ -22,5 +22,6 @@ jobs:
           username: ${{ vars.KLOCWORK_USERNAME }}
           build-tool: maven
           enable-local-scan: true
+          build-directory: app
 on:
   workflow_dispatch:
